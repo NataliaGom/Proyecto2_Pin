@@ -11,11 +11,11 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "bootstrap": "5.3.3",
-    "bootstrap-icons": "latest"
+    "vite": "latest"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
