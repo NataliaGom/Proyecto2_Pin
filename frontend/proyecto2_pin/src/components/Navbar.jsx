@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../imagenes/MosaicLogo.png';
 
 export default function Navbar({ currentUser, onClearUser }) {
+  const navigate = useNavigate();
   return (
     <nav className="navbar navbar-expand-lg sticky-top bg-body-tertiary border-bottom glass-nav">
       <div className="container-fluid px-3 px-lg-5">
@@ -49,11 +50,13 @@ export default function Navbar({ currentUser, onClearUser }) {
                   {currentUser}
                 </span>
 
-                <button
-                  className="btn btn-sm btn-outline-dark rounded-pill"
-                  onClick={onClearUser}
+                <button className="btn btn-sm btn-outline-dark rounded-pill"
+                  onClick={() => {
+                    onClearUser();
+                    navigate('/');
+                  }}
                 >
-                  Cambiar
+                Cambiar
                 </button>
               </li>
             )}
