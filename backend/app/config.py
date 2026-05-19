@@ -11,5 +11,5 @@ def get_settings():
     return {
         "database_url": os.getenv("DATABASE_URL", ""),
         "unsplash_access_key": os.getenv("UNSPLASH_ACCESS_KEY", ""),
-        "frontend_origin": os.getenv("FRONTEND_ORIGIN", "http://localhost:5173"),
+        "frontend_origin": os.getenv("FRONTEND_ORIGIN", "https://proyecto2-pin-1.onrender.com"),
     }
