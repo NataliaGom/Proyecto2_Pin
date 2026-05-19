@@ -6,6 +6,8 @@ from ..utils import get_user_id, pagination_meta, parse_min_date, serialize_post
 
 router = APIRouter(prefix="/api/posts", tags=["posts"])
 
+# Se implementan los endpoints para la gestión de posts, incluyendo listados con paginación, 
+# creación, actualización parcial y total, y eliminación de posts.
 
 def fetch_post_or_404(cur, post_id: int):
     cur.execute("SELECT * FROM posts WHERE id = %s;", (post_id,))

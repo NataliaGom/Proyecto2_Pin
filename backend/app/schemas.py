@@ -3,6 +3,7 @@ from typing import Optional
 
 from pydantic import BaseModel, Field, HttpUrl
 
+# Se crean los esquemas de validación de datos para las operaciones CRUD de los posts.
 
 class PostBase(BaseModel):
     title: str = Field(min_length=1, max_length=180)
@@ -10,8 +11,8 @@ class PostBase(BaseModel):
     image_url: HttpUrl
     tags: list[str] = Field(default_factory=list)
 
-
-class PostCreate(PostBase):
+#Heredan todo de PostBase
+class PostCreate(PostBase):  
     pass
 
 
