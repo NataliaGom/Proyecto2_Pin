@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
+#Con esta fución se cargan las variables de entorno y se almacenan en caché para evitar recargar 
+# las variables cada vez que se llama a la función. 
 @lru_cache
 def get_settings():
     return {

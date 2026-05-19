@@ -6,6 +6,8 @@ from ..utils import get_user_id
 
 router = APIRouter(prefix="/api/discovery", tags=["discovery"])
 
+# Usamos httpx para hacer peticiones asíncronas a la API de Unsplash, 
+# lo que permite manejar múltiples solicitudes concurrentes sin bloquear el servidor.
 
 @router.get("")
 async def list_discovery_photos(
@@ -17,8 +19,8 @@ async def list_discovery_photos(
     access_key = settings["unsplash_access_key"]
     if not access_key:
         raise HTTPException(status_code=503, detail="UNSPLASH_ACCESS_KEY no está configurada")
-
-    async with httpx.AsyncClient(timeout=10) as client:
+#Hace el fetch de las fotos a la API de Unsplash usando httpx, con un timeout de 10 segundos para evitar esperas prolongadas
+    async with httpx.AsyncClient(timeout=10) as client:  
         response = await client.get(
             "https://api.unsplash.com/photos",
             params={"page": page, "per_page": per_page},

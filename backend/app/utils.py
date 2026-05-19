@@ -42,9 +42,10 @@ def pagination_meta(page: int, page_size: int, total: int) -> dict:
         "page": page,
         "page_size": page_size,
         "total": total,
-        "total_pages": ceil(total / page_size) if total else 1,
+        "total_pages": ceil(total / page_size) if total else 1, # Evita total_pages=0 cuando total=0
     }
 
+# Asegura que min_date sea un datetime válido o None
 
 def parse_min_date(min_date: str | None):
     if not min_date:
