@@ -5,7 +5,7 @@ export default function PinGrid({ posts, loading, error, onDetail, onEdit, onDel
     <section id="feed" className="mb-5">
       <div className="d-flex justify-content-between align-items-end gap-3 mb-3">
         <div>
-          <p className="eyebrow mb-1">Base de datos</p>
+          <p className="eyebrow mb-1">Todos los pins en un solo lugar</p>
           <h2 className="h3 fw-black mb-0">Feed de pins</h2>
         </div>
         {loading && <span className="spinner-border spinner-border-sm" aria-label="Cargando" />}
