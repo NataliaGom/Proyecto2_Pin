@@ -25,15 +25,18 @@ body {
   backdrop-filter: blur(18px);
 }
 
-.brand-mark {
-  display: inline-grid;
-  width: 2.5rem;
-  height: 2.5rem;
-  place-items: center;
-  color: #fff;
-  background: var(--pin-accent);
-  border-radius: 50%;
-  box-shadow: 0 10px 25px rgba(198, 61, 47, 0.25);
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+.navbar-brand {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #111 !important;
+  text-decoration: none;
 }
 
 .intro-card {
