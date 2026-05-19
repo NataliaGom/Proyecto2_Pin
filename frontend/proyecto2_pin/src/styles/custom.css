@@ -1,16 +1,16 @@
 :root {
-  --pin-bg: #faf7f2;
-  --pin-ink: #231f20;
-  --pin-muted: #746c65;
-  --pin-accent: #c63d2f;
-  --pin-accent-dark: #9f2f25;
-  --pin-soft: #f1ebe3;
+  --pin-bg: #f8f9ff;
+  --pin-ink: #0f1523;
+  --pin-muted: #5e6a85;
+  --pin-accent: #4f6ef7;
+  --pin-accent-dark: #3a57d4;
+  --pin-soft: #eaedff;
 }
 
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(198, 61, 47, 0.13), transparent 32rem),
+    radial-gradient(circle at top left, rgba(79, 110, 247, 0.10), transparent 32rem),
     var(--pin-bg);
   color: var(--pin-ink);
 }
@@ -21,7 +21,7 @@ body {
 }
 
 .glass-nav {
-  background: rgba(250, 247, 242, 0.88) !important;
+  background: rgba(248, 249, 255, 0.88) !important;
   backdrop-filter: blur(18px);
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .intro-card {
-  background: linear-gradient(135deg, #fff, #f4ede5);
+  background: linear-gradient(135deg, #fff, #eef0ff);
 }
 
 .eyebrow {
@@ -53,15 +53,15 @@ body {
 
 .btn-pinterest {
   color: #fff;
-  background: var(--pin-accent);
-  border-color: var(--pin-accent);
+  background: linear-gradient(135deg, var(--pin-accent), #7c5cf6);
+  border-color: transparent;
 }
 
 .btn-pinterest:hover,
 .btn-pinterest:focus {
   color: #fff;
-  background: var(--pin-accent-dark);
-  border-color: var(--pin-accent-dark);
+  background: linear-gradient(135deg, var(--pin-accent-dark), #6346d4);
+  border-color: transparent;
 }
 
 .pin-masonry {
@@ -81,7 +81,7 @@ body {
 
 .pin-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 18px 45px rgba(35, 31, 32, 0.12) !important;
+  box-shadow: 0 18px 45px rgba(79, 110, 247, 0.14) !important;
 }
 
 .pin-image-button {
@@ -115,7 +115,7 @@ body {
 }
 
 .tag-badge {
-  color: var(--pin-ink);
+  color: var(--pin-accent-dark);
   background: var(--pin-soft);
 }
 
@@ -124,7 +124,7 @@ body {
   color: var(--pin-muted);
   text-align: center;
   background: rgba(255, 255, 255, 0.72);
-  border: 1px dashed rgba(35, 31, 32, 0.18);
+  border: 1px dashed rgba(79, 110, 247, 0.25);
   border-radius: 1.5rem;
 }
 
@@ -140,7 +140,7 @@ body {
   place-items: center;
   padding: 1rem;
   overflow-y: auto;
-  background: rgba(35, 31, 32, 0.48);
+  background: rgba(15, 21, 35, 0.50);
   backdrop-filter: blur(8px);
 }
 
@@ -151,7 +151,7 @@ body {
   overflow-y: auto;
   background: #fff;
   border-radius: 2rem;
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 30px 90px rgba(79, 110, 247, 0.18);
 }
 
 .modal-card-sm {
