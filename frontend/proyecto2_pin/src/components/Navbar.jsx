@@ -15,7 +15,7 @@ export default function Navbar({ currentUser, onClearUser }) {
               <circle cx="9" cy="9" r="1.8" fill="white" opacity="0.6"/>
             </svg>
           </span>
-          Pinning
+          Mosaic
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Abrir navegación">
           <span className="navbar-toggler-icon" />
