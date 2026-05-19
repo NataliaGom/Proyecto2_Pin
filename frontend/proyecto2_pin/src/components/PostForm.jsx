@@ -47,7 +47,7 @@ export default function PostForm({ currentUser, initialImage = '', onSubmit, tit
     <section id="crear" className="card border-0 shadow-sm rounded-5 p-4 mb-5">
       <div className="d-flex flex-column flex-md-row justify-content-between gap-3 mb-3">
         <div>
-          <p className="eyebrow mb-1">Alta de entidad</p>
+          <p className="eyebrow mb-1">Alta de pins</p>
           <h2 className="h3 fw-black mb-0">{title}</h2>
         </div>
         <span className="text-secondary small">Usuario creador: <strong>{currentUser || 'sin identificar'}</strong></span>

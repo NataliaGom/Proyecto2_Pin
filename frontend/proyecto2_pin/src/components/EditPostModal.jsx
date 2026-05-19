@@ -52,9 +52,9 @@ export default function EditPostModal({ post, onClose, onPatch, onReplace }) {
         </div>
         <div className="btn-group mb-3" role="group" aria-label="Tipo de actualización">
           <input type="radio" className="btn-check" name="edit-mode" id="mode-patch" checked={mode === 'patch'} onChange={() => setMode('patch')} />
-          <label className="btn btn-outline-dark" htmlFor="mode-patch">PATCH parcial</label>
+          <label className="btn btn-outline-dark" htmlFor="mode-patch">Modifica</label>
           <input type="radio" className="btn-check" name="edit-mode" id="mode-put" checked={mode === 'put'} onChange={() => setMode('put')} />
-          <label className="btn btn-outline-dark" htmlFor="mode-put">PUT reemplazo</label>
+          <label className="btn btn-outline-dark" htmlFor="mode-put">Reemplaza</label>
         </div>
         <form className="row g-3" onSubmit={handleSubmit}>
           <div className="col-12">

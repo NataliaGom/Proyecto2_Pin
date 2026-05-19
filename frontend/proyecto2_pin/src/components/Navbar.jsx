@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logo from '../imagenes/MosaicLogo.png';
 
 export default function Navbar({ currentUser, onClearUser }) {
   return (
@@ -6,8 +7,8 @@ export default function Navbar({ currentUser, onClearUser }) {
       <div className="container-fluid px-3 px-lg-5">
 
         <Link className="navbar-brand fw-black d-flex align-items-center gap-2" to="/">
-          <span className="brand-mark">P</span>
-          Pin Minimal
+          <img src={logo} alt="Mosaic" className="brand-logo" />
+          Mosaic
         </Link>
 
         <button

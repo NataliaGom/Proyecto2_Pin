@@ -24,9 +24,9 @@ export default function DiscoverySection({ currentUser, onSavePhoto }) {
     <section id="descubrir" className="mb-5">
       <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-3">
         <div>
-          <p className="eyebrow mb-1">API de terceros transformada</p>
-          <h2 className="h3 fw-black mb-0">Descubrimiento Unsplash</h2>
-          <p className="text-secondary mb-0">El frontend llama a tu backend, y el backend transforma la respuesta de Unsplash.</p>
+          <p className="eyebrow mb-1">Descubre e inspírate</p>
+          <h2 className="h3 fw-black mb-0">¿Buscas inspiración?</h2>
+          <p className="text-secondary mb-0">Los mejores pins, en un solo lugar.</p>
         </div>
         <div className="d-flex gap-2">
           <button className="btn btn-outline-dark rounded-pill" disabled={page <= 1} onClick={() => setPage(page - 1)}>Anterior</button>
