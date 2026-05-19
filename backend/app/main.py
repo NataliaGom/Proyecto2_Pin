@@ -13,7 +13,7 @@ app = FastAPI(
     version="1.0.0",
 )
 
-origins = ["http://localhost:5173", settings["frontend_origin"]]
+origins = ["https://proyecto2-pin-1.onrender.com", settings["frontend_origin"]]
 
 app.add_middleware(
     CORSMiddleware,
