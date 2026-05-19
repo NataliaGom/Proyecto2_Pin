@@ -8,8 +8,8 @@ from .routers import discovery, posts
 settings = get_settings()
 
 app = FastAPI(
-    title="API de Posts tipo Pinterest",
-    description="API propia para posts tipo Pinterest con PostgreSQL, headers de usuario y discovery desde Unsplash.",
+    title="API de Posts Mosaic",
+    description="API propia para posts Mosaic con PostgreSQL, headers de usuario y discovery desde Unsplash.",
     version="1.0.0",
 )
 
