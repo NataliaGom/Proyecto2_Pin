@@ -1,4 +1,4 @@
-# Proyecto2_Pin 📌
+# Proyecto2
 
 Aplicación web inspirada en Pinterest para publicar y descubrir imágenes. Permite a los usuarios crear, editar y eliminar *pins* propios, explorar fotos externas de Unsplash y guardarlas como pins propios.
 
