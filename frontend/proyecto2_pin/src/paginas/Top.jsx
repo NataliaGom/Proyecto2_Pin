@@ -1,7 +1,17 @@
+import { useNavigate } from 'react-router-dom';
+
 import UserForm from '../components/UserForm.jsx';
 import logo from '../imagenes/MosaicLogo.png';
 
 export default function Top({ currentUser, saveUser }) {
+  const navigate = useNavigate();
+
+  const handleSaveUser = (user) => {
+    saveUser(user);
+
+    navigate('/descubrir');
+  };
+
   return (
     <div className="container py-5 text-center">
 
@@ -26,7 +36,7 @@ export default function Top({ currentUser, saveUser }) {
       <div className="mx-auto" style={{ maxWidth: '700px' }}>
         <UserForm
           currentUser={currentUser}
-          onSaveUser={saveUser}
+          onSaveUser={handleSaveUser}
         />
       </div>
 
