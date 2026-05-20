@@ -180,3 +180,17 @@ body {
     column-count: 1;
   }
 }
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+.navbar-brand {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #111 !important;
+  text-decoration: none;
+}
